@@ -1,5 +1,6 @@
 def make_combination(n, k):
     total = 1
+    p = n-k
     for i in range(n, k, -1):
         total *= i
 
@@ -9,4 +10,4 @@ def make_combination(n, k):
 
     return total//another
 
-print(make_combination(1000, 7))
+print(make_combination(6,0))
