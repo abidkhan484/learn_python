@@ -41,7 +41,7 @@ def _siftdown(pos):
     leftchild = (2*pos)+1
     while leftchild < length:
         rightchild = leftchild + 1
-        if rightchild < length and heap[leftchild].data > heap[rightchild].data:
+        if rightchild < length and heap[leftchild] > heap[rightchild]:
             leftchild = rightchild
         if item.data < heap[leftchild].data:
             break
